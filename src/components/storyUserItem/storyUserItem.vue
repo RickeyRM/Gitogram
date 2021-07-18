@@ -1,5 +1,6 @@
 <template>
-  <button class="c-story-user-item">
+  <div class="story__item">
+    <button class="c-story-user-item">
     <div class="avatar">
       <img :src="avatar" class="avatar__img" alt="user">
     </div>
@@ -7,6 +8,7 @@
       {{ username }}
     </div>
   </button>
+  </div>
 </template>
 <script>
 export default {
