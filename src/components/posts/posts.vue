@@ -1,11 +1,16 @@
 <template>
-  <div class="posts">
-    <ul class="c-posts">
-      <li class="c-posts__item">
-        <div class="posts__img">
-          <img :src="avatar" alt="beb">
+  <div class="container">
+    <ul class="posts__inner">
+      <li class="posts__item">
+        <div class="posts__user">
+          <div class="posts__img">
+            <img :src="avatar" alt="beb">
+          </div>
+          <span class="posts__username">{{ username }}</span>
         </div>
-        <span class="posts__username">{{ username }}</span>
+        <div class="posts__repository">
+          <slot name="repository"></slot>
+        </div>
       </li>
     </ul>
   </div>
@@ -13,16 +18,7 @@
 
 <script>
 export default {
-  props: {
-    avatar: {
-      type: String,
-      required: true
-    },
-    username: {
-      type: String,
-      required: true
-    }
-  }
+  name: 'posts'
 }
-
 </script>
+<style lang="scss" src="./posts.scss" scoped></style>

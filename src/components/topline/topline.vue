@@ -1,6 +1,6 @@
 <template>
     <div class="c-topline">
-        <div class="x-container">
+        <div class="container">
             <div class="headline">
                 <slot name="headline" />
             </div>

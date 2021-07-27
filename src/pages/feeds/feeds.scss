@@ -1,17 +1,25 @@
-.icon{
-  width: 24px;
-  color: #262626;
-
-}
 .header{
   display: flex;
   justify-content: space-between;
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__icon{
+    width: 25px;
+    color: #262626;
+    margin-right: 10px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 }
-.navigation{
-  display: flex;
-  justify-content: space-between;
-}
+
 .stories{
   display: flex;
   justify-content: space-between;
+}
+.posts{
+  margin-top: 32px;
 }

@@ -1,8 +1,8 @@
 
-.c-story-user-item{
+.stories__user-item{
   background: inherit;
 }
-.avatar{
+.stories__avatar{
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -13,7 +13,7 @@
   align-items: center;
   margin-bottom: 6px;
 }
-.avatar img{
+.stories__avatar-img img{
   width: 80px;
   border-radius: 50%;
   margin: 0 auto;

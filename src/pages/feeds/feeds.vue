@@ -6,11 +6,11 @@
             <a class="logo">
               <icon name="gitogram" />
             </a>
-            <div class="navigation">
-              <div class="icon">
-              <icon name="home" />
-            </div>
-              <div class="icon">
+            <div class="header__nav">
+              <div class="header__icon">
+                <icon name="home" />
+              </div>
+              <div class="header__icon">
                 <icon name="out" />
               </div>
             </div>
@@ -24,9 +24,10 @@
           </ul>
         </template>
       </topline>
-      <template>
-        <posts />
-      </template>
+    </div>
+    <div class="posts">
+      <posts :avatar="stories[0].avatar" :username="stories[0].username"/>
+      <repository />
     </div>
 </template>
 <script>
@@ -35,6 +36,7 @@ import { storyUserItem } from '../../components/storyUserItem'
 import { icon } from '../../icons'
 import { posts } from '../../components/posts'
 import stories from './data.json'
+import { repository } from '../../components/repository'
 
 export default {
   name: 'feeds',
@@ -42,7 +44,8 @@ export default {
     topline,
     icon,
     storyUserItem,
-    posts
+    posts,
+    repository
   },
   data () {
     return {
